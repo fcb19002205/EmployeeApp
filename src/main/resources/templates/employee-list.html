@@ -48,14 +48,14 @@
                             <td><strong th:text="${employee.phone}"></strong></td>
                         </tr>
                         <tr>
-                            <td>Brutto salary:</td>
+                            <td>Gross salary:</td>
                             <td>
                                 <strong><span th:each="salary : ${employee.salaries}"
                                               th:text="${salary.bruttoSalary}"></span> € </strong>
                             </td>
                         </tr>
                         <tr>
-                            <td>Netto salary:</td>
+                            <td>Net salary:</td>
                             <td>
                                 <strong><span th:each="salary : ${employee.salaries}"
                                               th:text="${salary.nettoSalary}"></span> € </strong>
