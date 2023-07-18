@@ -1,0 +1,13 @@
+package com.application.EmployeeApp.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class OptionController {
+
+    @GetMapping("/options")
+    public String showOptionPage() {
+        return "options";
+    }
+}

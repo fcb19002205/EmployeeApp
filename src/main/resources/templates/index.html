@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <title>Home page</title>
+    <style>
+    .mask {
+        height: 600px;
+        width: 100vw;
+        background: black;
+        overflow: hidden;
+        background: #C33764;
+        background: -webkit-linear-gradient(rgba(29,38,113,0.8), rgba(195,55,100,0.8)), url("https://img.freepik.com/free-photo/blue-office-stationery-with-copy-space_23-2148475340.jpg?w=1380&t=st=1689627018~exp=1689627618~hmac=0c7743cb77e5dc8abeb84a32d79af618a295a50f788f4dea20b708bb52963067");
+        background: linear-gradient(rgba(29,38,113,0.8), rgba(195,55,100,0.8)), url("https://img.freepik.com/free-photo/blue-office-stationery-with-copy-space_23-2148475340.jpg?w=1380&t=st=1689627018~exp=1689627618~hmac=0c7743cb77e5dc8abeb84a32d79af618a295a50f788f4dea20b708bb52963067"); /* The least supported option. */
+        }
+
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+<header>
+    <div th:insert="fragments/header :: header"></div>
+
+    <div class="mask rgba-black-strong">
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-md-10">
+                    <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">Employee Management System</h2>
+                    <hr class="hr-light">
+                    <h4 class="text-white my-4">Your best application for employee management</h4>
+                    <a th:href="@{/options}" class="btn btn-outline-white text-white">
+                        Read more for application features <i class="fa fa-book mk-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="mt-5">
+    <div class="container">
+        <section id="best-features" class="text-center">
+            <h2 class="mb-5 font-weight-bold">Best features</h2>
+            <div class="row d-flex justify-content-center mb-4">
+                <div class="col-md-8">
+                    <p class="grey-text">"Employee Manager" is a powerful and intuitive web application that simplifies the
+                        processes of managing salaries in your company. Regardless of the size of your business, our
+                        application provides you with complete control over your employees' payrolls in an easy and
+                        organized manner.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                    <h4 class="my-4 font-weight-bold">Experience</h4>
+                </div>
+                <div class="col-md-4 mb-1">
+                    <i class="fa fa-heart fa-4x orange-text"></i>
+                    <h4 class="my-4 font-weight-bold">Quality</h4>
+                </div>
+                <div class="col-md-4 mb-1">
+                    <i class="fa fa-bicycle fa-4x orange-text"></i>
+                    <h4 class="my-4 font-weight-bold">Seamless</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
